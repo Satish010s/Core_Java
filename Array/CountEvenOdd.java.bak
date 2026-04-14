@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class  CountEvenOdd
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Count the element of even and odd number in an array");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter thr size of array");
+		int n = sc.nextInt();
+		int []arr=new int[n];
+		System.out.println("Take input as element of array");
+		for(int i=0;i<n;i++){
+			arr[i]=sc.nextInt();
+		}
+		int Counteven=0;
+		int Countodd=0;
+		for(int i=0;i<n;i++){
+			if(arr[i]%2==0){
+				counteven++;
+		  }
+		else{
+				Countodd++;
+		}
+	
+}
+		System.out.println("Number of even element in array is "+ Counteven);
+		System.out.println("Number of even element in array is "+ Countodd);
+}
+}

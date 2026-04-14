@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class MaxElement 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Finding MAximum element in an array");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("First take the size of arrry");
+		int n=sc.nextInt();
+
+		int [] arr=new int[n];
+		System.out.println("Now you will put the element of array");
+		for(int i=0;i<n;i++){
+			arr[i]=sc.nextInt();
+		}
+		int maxEle=arr[0];
+		for(int i=0;i<n;i++){
+			if(arr[i]>=maxEle){
+				maxEle=arr[i];
+			}
+		}
+		System.out.println("The maximum element of array is "+(maxEle));
+	}
+}
